@@ -1,6 +1,6 @@
 # Sequência Suprema
 
-**Conteúdo da Disciplina**: Programação Dinamica <br>
+**Conteúdo da Disciplina**: Programação Dinâmica <br>
 
 ## Alunas
 |Matrícula | Aluna |
