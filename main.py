@@ -2,6 +2,7 @@ from PIL import Image, ImageTk, ImageDraw, ImageFont
 import random
 import tkinter as tk
 import tkinter.font as tkfont
+import os
 
 player_1_window = None
 player_2_window = None
@@ -74,7 +75,12 @@ def start_game_player_1():
     player_hand = deck[:11]
 
     for i, card in enumerate(player_hand):
-        label = tk.Label(player_1_window, text=card, font="Arial 12")
+        image_path = os.path.join("assets", f"{card[0]}_{card[1]}.png")
+        image = Image.open(image_path)
+        image = image.resize((100, 150), Image.ANTIALIAS)
+        photo = ImageTk.PhotoImage(image)
+        label = tk.Label(player_1_window, image=photo)
+        label.image = photo
         label.pack(pady=5)
 
     print("Cartas do jogador 1:")
@@ -90,7 +96,12 @@ def start_game_player_2():
     player_hand = deck[:11]
 
     for i, card in enumerate(player_hand):
-        label = tk.Label(player_2_window, text=card, font="Arial 12")
+        image_path = os.path.join("assets", f"{card[0]}_{card[1]}.png")
+        image = Image.open(image_path)
+        image = image.resize((100, 150), Image.ANTIALIAS)
+        photo = ImageTk.PhotoImage(image)
+        label = tk.Label(player_2_window, image=photo)
+        label.image = photo
         label.pack(pady=5)
 
     print("Cartas do jogador 2:")
