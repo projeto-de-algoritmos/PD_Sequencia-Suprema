@@ -99,29 +99,21 @@ def start_game_player_1():
 
 
 def find_and_display_subsequence(cards):
-    # Ordenar as cartas por naipe e classificá-las em ordem crescente
+
     cards.sort(key=lambda card: (card[1], card[0]))
-
-    # Inicializar uma matriz para armazenar os comprimentos das subsequências
     lengths = [1] * len(cards)
-
-    # Inicializar uma matriz para armazenar os índices dos predecessores
     predecessors = [-1] * len(cards)
 
-    # Encontrar a maior subsequência crescente
     for i in range(1, len(cards)):
         for j in range(i):
             if cards[i][0] > cards[j][0] and lengths[i] < lengths[j] + 1:
                 lengths[i] = lengths[j] + 1
                 predecessors[i] = j
 
-    # Encontrar o comprimento máximo da subsequência
     max_length = max(lengths)
-
-    # Encontrar o índice do último elemento da subsequência máxima
     max_index = lengths.index(max_length)
 
-    # Reconstruir a subsequência máxima
+
     subsequence = []
     while max_index != -1:
         subsequence.append(cards[max_index])
