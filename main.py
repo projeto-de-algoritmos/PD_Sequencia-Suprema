@@ -212,3 +212,4 @@ instructions_button.place(x=200, y=550, anchor=tk.CENTER)
 
 window.bind("<Configure>", resize_bg)
 
+window.mainloop()
