@@ -5,9 +5,8 @@
 ## Alunas
 |Matrícula | Aluna |
 | -- | -- |
-| 20/0206040  |  Dara Maria Barbosa de Sousa  |
 | 20/0041606  |  Marina Márcia Costa de Souza |
-
+| 20/0206040  |  Dara Maria Barbosa de Sousa  |
 
 ## Sobre 
 O projeto consiste em uma interface gráfica e interativa que permite que o usuário escolha o modo "Player 1" e receba um conjunto de cartas. O usuário pode encontrar a maior subsequência crescente entre essas cartas utilizando o conceito de programação dinâmica. Além disso, o projeto oferece a opção de jogar novamente, reiniciando o jogo e recebendo um novo conjunto de cartas. O usuário também podem visualizar as instruções do jogo em uma janela separada.
