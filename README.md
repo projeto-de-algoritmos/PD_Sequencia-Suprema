@@ -1,4 +1,4 @@
-# Sequência Suprema
+# 
 
 **Conteúdo da Disciplina**: Programação Dinâmica <br>
 
